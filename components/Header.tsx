@@ -8,6 +8,7 @@ import { Logo } from "./Logo";
 const links = [
   { href: "/pachete/", label: "Pachete și prețuri" },
   { href: "/#cum-lucram", label: "Cum lucrăm" },
+  { href: "/#blog", label: "Blog" },
   { href: "/#intrebari", label: "Întrebări" },
   { href: "/contact/", label: "Contact" },
 ];
@@ -28,9 +29,14 @@ export function Header() {
           type="button"
           aria-expanded={open}
           aria-controls="nav"
+          aria-label={open ? "Închide meniul" : "Deschide meniul"}
           onClick={() => setOpen((v) => !v)}
         >
-          {open ? "Închide" : "Meniu"}
+          <span className={`menu-icon${open ? " active" : ""}`} aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
         </button>
         <nav className={`nav${open ? " open" : ""}`} id="nav" aria-label="Navigare principală">
           {links.map((l) => (

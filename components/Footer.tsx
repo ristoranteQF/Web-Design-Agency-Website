@@ -11,7 +11,7 @@ export function Footer() {
             <Link href="/" aria-label="Velunix Studio, pagina principală">
               <Logo variant="on-dark" height={68} />
             </Link>
-            <p className="tag">{SITE.tagline} Site-uri de prezentare programate manual pentru afaceri locale.</p>
+            <p className="tag">Digital presence. Elevated.</p>
           </div>
           <div>
             <h2>Pagini</h2>
@@ -31,7 +31,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="legal">© 2026 Velunix Studio. Prețurile sunt exprimate în euro și sunt finale.</p>
+        <p className="legal">© {new Date().getFullYear()} Velunix Studio. Toate drepturile rezervate.</p>
       </div>
     </footer>
   );

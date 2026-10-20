@@ -74,7 +74,7 @@ export const steps = [
 export const faq = [
   {
     q: "Site-ul rămâne al meu?",
-    a: "Da. Domeniul este înregistrat pe numele tău, iar după achitarea integrală deții conținutul și designul site-ului. La nevoie, îți predăm fișierele și te ajutăm să muți site-ul pe altă găzduire.",
+    a: "Da. Domeniul este înregistrat pe numele tău, iar după achitarea integrală deții conținutul și design-ul site-ului. La nevoie, îți predăm fișierele și te ajutăm să muți site-ul pe altă găzduire.",
   },
   {
     q: "Sunt obligat să plătesc un abonament lunar?",
@@ -82,7 +82,7 @@ export const faq = [
   },
   {
     q: "Pot să schimb singur textele și pozele?",
-    a: "Da, cu pachetul Complet, prin CMS, fără risc să strici designul. Altfel, ne ocupăm noi de modificări, în orele incluse în planul lunar.",
+    a: "Da, prin CMS (sistemul de gestiune al conținutului), fără risc să strici design-ul. Altfel, ne ocupăm noi de modificări, în orele incluse în planul lunar.",
   },
   {
     q: "Cât durează să am site-ul gata?",

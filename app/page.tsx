@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
-import { faq, fullHighlights, shiftLog, startHighlights, steps } from "@/lib/content";
+import { faq, fullHighlights, startHighlights, steps } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
           <div>
             <h1>Site-ul care lucrează pentru afacerea ta.</h1>
             <p className="lead">
-              Creăm site-uri de prezentare programate manual, rapide și sigure, care te fac ușor de găsit pe Google și
-              ușor de contactat de clienți. Calitate premium, prețuri corecte.
+              Site-uri de prezentare premium · SEO local · Mentenanță web.
+Construim o prezență digitală care inspiră încredere și ajută afacerile locale să fie găsite.
             </p>
             <div className="btn-row">
               <Link className="btn btn-bronze" href="/contact/">Programează o discuție gratuită</Link>
@@ -19,18 +19,29 @@ export default function Home() {
             </div>
             <p className="fine">Discuția durează 30 de minute și nu te obligă la nimic.</p>
           </div>
-          <aside className="shift" aria-label="Exemplu: o zi din viața unui site">
-            <p className="shift-title">
-              O zi din viața site-ului tău<span className="shift-note">exemplu</span>
-            </p>
-            <ol className="log">
-              {shiftLog.map((e) => (
-                <li key={e.t} className={e.last ? "last" : undefined}>
-                  <time dateTime={e.t}>{e.t}</time>
-                  <p>{e.text}</p>
-                </li>
-              ))}
-            </ol>
+          <aside className="site-preview" aria-label="Previzualizare animată a unui site realizat de Velunix Studio">
+            <div className="browser-bar" aria-hidden="true">
+              <span className="browser-dots"><i /><i /><i /></span>
+              <span className="browser-address">atelierlocal.ro</span>
+              <span className="browser-lock">https</span>
+            </div>
+            <div className="preview-site">
+              <div className="preview-nav">
+                <strong>ATELIER <span>LOCAL</span></strong>
+                <span className="preview-links">SERVICII&nbsp;&nbsp;&nbsp; DESPRE&nbsp;&nbsp;&nbsp; CONTACT</span>
+              </div>
+              <div className="preview-hero">
+                <p className="preview-kicker">STUDIO FLORAL · BUCUREȘTI</p>
+                <h2>Frumusețe<br />crescută cu grijă.</h2>
+                <p>Flori de sezon, aranjate cu rost.</p>
+                <span className="preview-cta">Descoperă atelierul <b>↗</b></span>
+              </div>
+              <div className="preview-bottom">
+                <span>01 / ARANJAMENTE</span>
+                <span>Făcut local, pentru tine</span>
+              </div>
+            </div>
+            <span className="preview-caption">Un site construit în jurul afacerii tale</span>
           </aside>
         </div>
       </section>
@@ -51,15 +62,14 @@ export default function Home() {
             <div>
               <h3>Te contactează ușor</h3>
               <p>
-                Telefon, formular de contact și, în pachetul Complet, WhatsApp și hartă Google, acolo unde le caută
-                omul. Pe telefon arată la fel de bine ca pe calculator.
+                Telefon, formular de contact și, în pachetul Complet, hartă Google și Google Business Profile. Pe telefon arată la fel de bine ca pe calculator.
               </p>
             </div>
             <div>
               <h3>Rămâne al tău, fără bătăi de cap</h3>
               <p>
-                Hosting, securitate, backup-uri și remedieri sunt în grija noastră. Cu pachetul Complet, îți schimbi
-                singur textele, prețurile și pozele, fără risc să strici designul.
+                Hosting, securitate, backup-uri și remedieri sunt în grija noastră. Cu un CMS (sistem de gestiune al conținutului) ușor de folosit, îți schimbi
+                singur textele, prețurile și pozele, fără risc să strici design-ul.
               </p>
             </div>
           </div>
@@ -162,6 +172,35 @@ export default function Home() {
                 <p>{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section blog-section" id="blog">
+        <div className="wrap">
+          <div className="section-head">
+            <p className="blog-eyebrow">DIN JURNALUL NOSTRU</p>
+            <h2>Idei clare pentru o prezență online mai bună.</h2>
+          </div>
+          <div className="blog-grid">
+            <article className="blog-item">
+              <span className="blog-tag">ÎN CURÂND · DESIGN</span>
+              <h3>Ce face un site să pară de încredere din prima secundă?</h3>
+              <p>Pregătim un ghid despre detaliile care îi ajută pe vizitatori să aleagă cu încredere.</p>
+              <span className="blog-read">Articol în pregătire</span>
+            </article>
+            <article className="blog-item">
+              <span className="blog-tag">ÎN CURÂND · SEO</span>
+              <h3>SEO local: cum te găsesc clienții din apropiere</h3>
+              <p>Note practice despre căutările locale, profilul Google și paginile care răspund întrebărilor reale.</p>
+              <span className="blog-read">Articol în pregătire</span>
+            </article>
+            <article className="blog-item">
+              <span className="blog-tag">ÎN CURÂND · PERFORMANȚĂ</span>
+              <h3>De ce contează fiecare secundă la încărcarea unui site</h3>
+              <p>O explicație simplă despre viteză, experiența pe telefon și lucrurile care încetinesc paginile.</p>
+              <span className="blog-read">Articol în pregătire</span>
+            </article>
           </div>
         </div>
       </section>
