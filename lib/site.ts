@@ -4,9 +4,9 @@ export const SITE = {
   phoneDisplay: "0748 337 814",
   phoneTel: "+40748337814",
   email: "contact@velunixstudio.ro",
-  tagline: "Mic studio, standarde mari.",
+  tagline: "Digital presence. Elevated.",
   description:
-    "Site-uri de prezentare programate manual, rapide și sigure, pentru afaceri locale din România. Calitate premium, prețuri corecte. Discuție gratuită de 30 de minute.",
+    "Site-uri de prezentare premium · SEO local · Mentenanță web. Construim o prezență digitală care inspiră încredere și ajută afacerile locale să fie găsite.",
 };
 
 export const WHATSAPP = `https://wa.me/40748337814?text=${encodeURIComponent(

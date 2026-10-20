@@ -19,27 +19,16 @@ Construim o prezență digitală care inspiră încredere și ajută afacerile l
             </div>
             <p className="fine">Discuția durează 30 de minute și nu te obligă la nimic.</p>
           </div>
-          <aside className="site-preview" aria-label="Previzualizare animată a unui site realizat de Velunix Studio">
+          <aside className="site-preview" aria-label="Exemplu de site realizat pentru OMVG Regional Onest Consulting">
             <div className="browser-bar" aria-hidden="true">
               <span className="browser-dots"><i /><i /><i /></span>
-              <span className="browser-address">atelierlocal.ro</span>
+              <span className="browser-address">omvg.ro</span>
               <span className="browser-lock">https</span>
             </div>
             <div className="preview-site">
-              <div className="preview-nav">
-                <strong>ATELIER <span>LOCAL</span></strong>
-                <span className="preview-links">SERVICII&nbsp;&nbsp;&nbsp; DESPRE&nbsp;&nbsp;&nbsp; CONTACT</span>
-              </div>
-              <div className="preview-hero">
-                <p className="preview-kicker">STUDIO FLORAL · BUCUREȘTI</p>
-                <h2>Frumusețe<br />crescută cu grijă.</h2>
-                <p>Flori de sezon, aranjate cu rost.</p>
-                <span className="preview-cta">Descoperă atelierul <b>↗</b></span>
-              </div>
-              <div className="preview-bottom">
-                <span>01 / ARANJAMENTE</span>
-                <span>Făcut local, pentru tine</span>
-              </div>
+              <a className="preview-image-link" href="https://omvg.ro/" target="_blank" rel="noopener noreferrer" aria-label="Vizitează site-ul omvg.ro">
+                <img src="/omvg-homepage.png" alt="Pagina principală a site-ului OMVG Regional Onest Consulting" width="1280" height="900" />
+              </a>
             </div>
             <span className="preview-caption">Un site construit în jurul afacerii tale</span>
           </aside>

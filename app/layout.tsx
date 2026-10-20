@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Velunix Studio | Site-uri de prezentare pentru afaceri locale",
+    default: "Velunix Studio | Digital presence. Elevated.",
     template: "%s | Velunix Studio",
   },
   description: SITE.description,
