@@ -31,7 +31,12 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="legal">© {new Date().getFullYear()} Velunix Studio. Toate drepturile rezervate.</p>
+        <div className="legal-row">
+          <p className="legal">© {new Date().getFullYear()} Velunix Studio. Toate drepturile rezervate.</p>
+          <a className="sal-link" href="https://reclamatiisal.anpc.ro" target="_blank" rel="nofollow noopener">
+            <img src="/icons/anpc-sal.svg" alt="Soluționarea Alternativă a Litigiilor" width="250" height="50" />
+          </a>
+        </div>
       </div>
     </footer>
   );
