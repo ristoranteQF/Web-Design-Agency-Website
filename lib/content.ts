@@ -1,58 +1,95 @@
 export type Item = string | { lead: string; text: string };
 
 export const startItems: Item[] = [
-  "Design personalizat, modern, 100% responsive și optimizat pentru toate dispozitivele (desktop, laptop, tabletă, telefon)",
-  "Site de prezentare de până la 8 pagini",
+  "Design personalizat, modern și 100% responsive (desktop, tabletă, telefon)",
+  "Site de prezentare de până la 5 pagini",
   "Găzduire și domeniu incluse pe primul an",
-  {
-    lead: "SEO de bază inclus din prima zi:",
-    text: "optimizare tehnică inițială (titluri, meta etichete, structură corectă în pagină și viteză de încărcare optimizată), ca site-ul tău să aibă o fundație corectă și să nu fie un „site-fantomă”",
-  },
-  "Certificat SSL și securitate configurate",
-  "Formular de contact simplu, dacă este necesar, cu bifă de consimțământ GDPR (fără protecția Cloudflare, disponibilă în pachetul Complet)",
-  "Politică de confidențialitate și cookie banner, implementate pentru conformitate cu legislația în vigoare (GDPR)",
-  "Training de administrare",
-  "30 de zile de suport tehnic după lansare",
+  "Buton WhatsApp și configurare Gmail",
+  "Certificat SSL și securitate",
+  "Politică de confidențialitate și cookie banner GDPR standard",
+  "Formular de contact simplu cu consimțământ GDPR",
+  "SEO tehnic de bază: titluri, meta descrieri, structură, viteză, sitemap și Search Console",
+  "CMS: modifici singur textele, prețurile și pozele, fără risc să strici designul",
+  "Ghid de utilizare și 30 de zile de suport tehnic după lansare",
 ];
 
 export const fullItems: Item[] = [
-  "Site de prezentare de până la 12 pagini",
-  "Formular de contact securizat cu Cloudflare (protecție anti-spam și anti-boți), cu bifă de consimțământ GDPR, cu datele trimise direct pe emailul afacerii tale",
-  "Integrare WhatsApp (buton de contact direct) și Google Maps (hartă și indicații către locația ta)",
-  "Conectare Google Analytics",
-  {
-    lead: "Îmbunătățire SEO avansată:",
-    text: "optimizare Google Business Profile, structură extinsă și viteză maximizată",
-  },
-  "CMS headless: îți poți modifica singur textele, prețurile și pozele, fără risc să strici designul",
+  "Site de prezentare de până la 8 pagini",
+  "Cookie banner cu blocarea Analytics și Maps până la consimțământ",
+  "Formular securizat Cloudflare (anti-spam și anti-boți), cu trimitere directă pe emailul afacerii",
+  "SEO extins: structură extinsă a paginilor, viteză maximizată și date structurate locale",
+  "Optimizare Google Business Profile",
+  "Google Maps și Google Analytics",
+  "Training de administrare CMS și 40 de zile de suport tehnic după lansare",
 ];
 
 export const startHighlights = [
-  "Până la 8 pagini",
+  "Până la 5 pagini",
   "Design personalizat, responsive pe toate dispozitivele",
   "Găzduire și domeniu incluse pe primul an",
-  "SEO de bază, viteză optimizată, SSL",
-  "Politică de confidențialitate și cookie banner (GDPR)",
+  "WhatsApp, Gmail, SSL și securitate",
+  "SEO tehnic de bază și CMS inclus",
 ];
 
 export const fullHighlights = [
-  "Până la 12 pagini",
-  "Formular de contact securizat cu Cloudflare",
-  "Integrare WhatsApp și Google Maps",
-  "Google Analytics și SEO avansat",
-  "CMS: îți modifici singur textele, prețurile și pozele",
+  "Până la 8 pagini",
+  "Formular securizat Cloudflare și cookie consent avansat",
+  "SEO local extins și Google Business Profile",
+  "Google Maps și Google Analytics",
+  "Training CMS și suport 40 de zile",
 ];
 
 export type Cell = "yes" | "no" | string;
+export const packageRows: { label: string; start: Cell; complet: Cell }[] = [
+  { label: "Preț de lansare (primii 10 clienți)", start: "549 €", complet: "799 €" },
+  { label: "Preț standard (după primii 10 clienți)", start: "790 €", complet: "1.099 €" },
+  { label: "Design personalizat, modern și 100% responsive", start: "yes", complet: "yes" },
+  { label: "Număr de pagini", start: "până la 5", complet: "până la 8" },
+  { label: "Găzduire și domeniu incluse pe primul an", start: "yes", complet: "yes" },
+  { label: "Buton WhatsApp și configurare Gmail", start: "yes", complet: "yes" },
+  { label: "Certificat SSL și securitate", start: "yes", complet: "yes" },
+  { label: "GDPR: politică de confidențialitate și cookie banner", start: "Standard", complet: "Analytics și Maps blocate până la consimțământ" },
+  { label: "Formular de contact cu consimțământ GDPR", start: "Simplu", complet: "Cloudflare securizat, anti-spam și anti-boți, direct pe email" },
+  { label: "SEO tehnic de bază: titluri, meta descrieri, structură, viteză, sitemap, Search Console", start: "yes", complet: "yes" },
+  { label: "SEO extins: structură, viteză maximizată și date structurate locale", start: "no", complet: "yes" },
+  { label: "Optimizare Google Business Profile", start: "no", complet: "yes" },
+  { label: "Google Maps și Google Analytics", start: "no", complet: "yes" },
+  { label: "CMS: modifici texte, prețuri și poze fără să strici designul", start: "yes", complet: "yes" },
+  { label: "Instruire", start: "Ghid de utilizare", complet: "Training de administrare CMS" },
+  { label: "Suport tehnic după lansare", start: "30 de zile", complet: "40 de zile" },
+];
+
+export const addOns: { service: string; price: string; includes: string }[] = [
+  { service: "Pagină suplimentară", price: "50 € / pagină", includes: "Design și implementare în același stil, SEO de bază." },
+  { service: "Versiune în engleză", price: "+40% din prețul site-ului", includes: "Structură duplicată și comutator de limbă. Traducerea o furnizezi tu sau o realizăm contra cost." },
+  { service: "Redactare texte", price: "40 € / pagină", includes: "Texte orientate spre clienți și SEO, pe baza informațiilor tale." },
+  { service: "Fotografii profesionale", price: "La cerere", includes: "Ședință foto la locația ta, în funcție de oraș și numărul de imagini." },
+  { service: "Logo și branding de bază", price: "De la 200 €", includes: "Logo, paletă de culori și fonturi." },
+  { service: "Email de afacere", price: "40 €", includes: "Configurare contact@domeniultău.ro. Abonamentul (de exemplu Google Workspace) îl plătești direct furnizorului." },
+  { service: "Migrare site vechi", price: "150 €", includes: "Mutarea conținutului și redirecționări 301, ca să nu pierzi pozițiile obținute." },
+  { service: "Configurare blog", price: "120 €", includes: "Secțiune de articole, categorii și șablon optimizat SEO." },
+  { service: "Rezervări online", price: "La cerere", includes: "Sistem de programări integrat în site." },
+  { service: "Livrare express (sub 10 zile)", price: "+35% din preț", includes: "Prioritizare în planificare, în funcție de disponibilitate." },
+];
+
 export const planRows: { label: string; esential: Cell; crestere: Cell }[] = [
-  { label: "Hosting gestionat, SSL, backup-uri, monitorizare uptime", esential: "yes", crestere: "yes" },
-  { label: "Securitate, update-uri tehnice constante", esential: "yes", crestere: "yes" },
+  { label: "Angajament de 6 luni", esential: "no", crestere: "169 € / lună" },
+  { label: "Hosting gestionat, certificat SSL, backup-uri și monitorizare uptime", esential: "yes", crestere: "yes" },
+  { label: "Securitate și update-uri tehnice constante", esential: "yes", crestere: "yes" },
   { label: "Remedieri prioritare în 24h lucrătoare", esential: "yes", crestere: "yes" },
   { label: "2 ore de modificări de conținut pe lună", esential: "yes", crestere: "yes" },
-  { label: "Administrare și optimizare Google Business Profile", esential: "no", crestere: "yes" },
-  { label: "Optimizare SEO continuă, pe pagină și tehnică", esential: "no", crestere: "yes" },
-  { label: "2 articole SEO redactate pe lună, pentru atragerea clienților", esential: "no", crestere: "yes" },
-  { label: "Raport lunar de activitate și performanță", esential: "scurt", crestere: "detaliat" },
+  { label: "Google Business Profile: informații, program, 4 postări/lună, răspunsuri la întrebări și recenzii", esential: "no", crestere: "yes" },
+  { label: "SEO continuu: până la 3 pagini optimizate/lună și verificare tehnică lunară", esential: "no", crestere: "yes" },
+  { label: "1 articol SEO redactat de noi pe lună", esential: "no", crestere: "yes" },
+  { label: "Raport lunar", esential: "Scurt", crestere: "Detaliat: cuvinte cheie, trafic, apeluri și direcții în Google, poziții urmărite" },
+  { label: "Perioadă minimă", esential: "Fără", crestere: "3 luni; 169 €/lună cu angajament de 6 luni" },
+];
+
+export const pricingSteps = [
+  { title: "Discuție gratuită", text: "30 de minute despre nevoile afacerii tale." },
+  { title: "Pachet și contract", text: "Alegi pachetul, semnăm și plătești avansul." },
+  { title: "Dezvoltare și livrare", text: "Primim textele și pozele (dacă le aveți), construim și livrăm site-ul." },
+  { title: "Lansare", text: "Plata soldului, publicare, training și suport tehnic." },
 ];
 
 export const shiftLog = [
