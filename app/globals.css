@@ -81,7 +81,7 @@ strong{font-weight:600}
 .hero h1{color:var(--ivory)}
 .lead{font-size:clamp(1.12rem,1.6vw,1.28rem);line-height:1.55;max-width:46ch;color:var(--on-dark);margin-top:1.5rem}
 .hero .fine{color:var(--on-dark-2);font-size:.95rem;margin:1.2rem 0 0}
-.site-preview{position:relative;z-index:0;padding:10px;border:1px solid rgba(240,211,148,.38);border-radius:27px;background:linear-gradient(145deg,#282922,#10110F 62%);box-shadow:0 34px 90px rgba(0,0,0,.48),0 0 0 1px rgba(255,255,255,.035),0 0 48px rgba(216,174,98,.1);transform:perspective(1100px) rotateY(-3deg);animation:preview-float 7s ease-in-out infinite}
+.site-preview{position:relative;z-index:0;padding:10px;border:1px solid rgba(240,211,148,.38);border-radius:27px;background:linear-gradient(145deg,#282922,#10110F 62%);box-shadow:0 34px 90px rgba(0,0,0,.48),0 0 0 1px rgba(255,255,255,.035),0 0 48px rgba(216,174,98,.1);transform:perspective(1100px) rotateY(-3deg);animation:preview-float 3s ease-in-out infinite}
 .browser-bar{height:42px;display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;gap:.6rem;padding-inline:.9rem;color:#C9C3B6;font-size:.72rem}
 .browser-dots{display:flex;gap:5px}
 .browser-dots i{width:7px;height:7px;border-radius:50%;background:#D6A84F}
@@ -159,6 +159,41 @@ td.no{color:var(--muted)}
 .th-sub{font-family:var(--body);font-weight:400;font-size:.85rem;color:var(--muted)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
+
+
+/* ===== Pachete: adăugiri (lipește la finalul secțiunii "tabel" din globals.css, înainte de @media) ===== */
+.brief{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.brief > div{padding:clamp(1.5rem,2.8vw,2.2rem);border:1px solid rgba(73,67,55,.1);border-radius:var(--r-lg);background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(247,243,234,.72));box-shadow:0 12px 34px rgba(37,31,20,.045)}
+.brief h3{margin-bottom:1rem}
+.brief .ticks{margin:0}
+.brief p{color:var(--muted);margin:0}
+.banner{margin:0 0 2rem;padding:1.3rem 1.6rem;border:1px solid rgba(118,86,34,.2);border-left:3px solid var(--bronze);border-radius:var(--r);background:linear-gradient(145deg,rgba(216,174,98,.16),rgba(240,211,148,.08))}
+.banner p{margin:.4rem 0 0;color:var(--text)}
+.eyebrow{display:block;color:var(--bronze-dk);font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.was{margin:-.1rem 0 .5rem;color:var(--muted);font-size:.95rem}
+.featured .was{color:var(--on-dark-2)}
+.sub-h{margin:3.2rem 0 1.2rem}
+.callout{margin-top:1.8rem;padding:clamp(1.5rem,2.8vw,2.2rem);border:1px solid rgba(66,57,40,.13);border-radius:var(--r-lg);background:linear-gradient(145deg,#FFFEFB,#F5F0E6);box-shadow:var(--shadow-soft)}
+.callout h3{margin-bottom:.5rem}
+.callout p{margin:0;color:var(--muted);max-width:68ch}
+.callout .price-sm{font-family:var(--display);font-size:1.8rem;font-weight:400;color:var(--text);margin-bottom:.7rem}
+.callout .price-sm span{font-family:var(--body);font-size:.95rem;color:var(--muted)}
+table.left{min-width:640px}
+table.left th,table.left td{text-align:left;vertical-align:top}
+table.left td:first-child{white-space:nowrap}
+table.left td.yes{white-space:nowrap}
+.two .ticks{margin:0}
+.two .note{margin-top:1.2rem}
+td{vertical-align:middle}
+
+/* în blocul @media (max-width:900px) adaugă: */
+/* .brief{grid-template-columns:1fr} */
+/* în blocul @media (max-width:560px) adaugă: */
+/* table.left td:first-child{white-space:normal} */
+
+
+
+
 /* ===== potrivit / nepotrivit ===== */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem)}
 .fit h3{margin:0 0 .9rem}
@@ -234,6 +269,7 @@ td.no{color:var(--muted)}
   .blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .site-preview{max-width:38rem;margin-inline:auto}
   .trio > div:hover,.pack:hover{transform:none}
+  .brief{grid-template-columns:1fr}
 }
 @media (max-width:760px){
   .brand img{height:54px}
@@ -250,6 +286,7 @@ td.no{color:var(--muted)}
   .legal-row{flex-direction:column;align-items:flex-start;gap:1rem}
   .preview-site{aspect-ratio:1.12}
   .hero::after,.statement::after,.cta::after,.page-head::after{opacity:.55}
+  table.left td:first-child{white-space:normal}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}

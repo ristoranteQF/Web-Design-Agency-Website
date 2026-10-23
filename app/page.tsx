@@ -114,7 +114,7 @@ Construim o prezență digitală care inspiră încredere și ajută afacerile l
               <h3>Complet</h3>
               <p className="price">749 €</p>
               <p className="for">
-                Tot ce include Start, dus la nivelul următor pentru performanță maximă și conversii.
+                Dus la nivelul următor pentru performanță maximă si conversii.
               </p>
               <ul className="ticks">{fullHighlights.map((t) => <li key={t}>{t}</li>)}</ul>
               <Link className="btn btn-bronze" href="/pachete/">Vezi tot ce include</Link>

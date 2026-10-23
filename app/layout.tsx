@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Velunix Studio | Digital presence. Elevated.",
+    default: "Velunix Studio | Web design & site-uri pentru afaceri locale",
     template: "%s | Velunix Studio",
   },
   description: SITE.description,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "ro_RO",
     siteName: SITE.name,
     url: "/",
-    title: "Velunix Studio | Site-uri de prezentare pentru afaceri locale",
+    title: "Velunix Studio | Site-uri pentru afaceri locale",
     description: SITE.description,
   },
   twitter: { card: "summary_large_image" },

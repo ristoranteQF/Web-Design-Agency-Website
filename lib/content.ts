@@ -24,19 +24,23 @@ export const fullItems: Item[] = [
 ];
 
 export const startHighlights = [
+  "Design personalizat, modern și 100% responsive",
   "Până la 5 pagini",
-  "Design personalizat, responsive pe toate dispozitivele",
-  "Găzduire și domeniu incluse pe primul an",
+  "Găduire și domeniu incluse pe primul an",
   "WhatsApp, Gmail, SSL și securitate",
-  "SEO tehnic de bază și CMS inclus",
+  "SEO tehnic de bază",
+  "CMS inclus (sistem de gestiune al conținutului)",
+  "Ghid de utilizare și 30 de zile de suport"
 ];
 
 export const fullHighlights = [
+  "Tot ce include Start, plus:",
   "Până la 8 pagini",
-  "Formular securizat Cloudflare și cookie consent avansat",
-  "SEO local extins și Google Business Profile",
+  "Cookie banner cu blocarea Analytics și Maps până la consimțământ",
+  "Formular securizat Cloudflare (anti-spam + anti-boți)",
+  "SEO extins și Optimizare Google Business Profile",
   "Google Maps și Google Analytics",
-  "Training CMS și suport 40 de zile",
+  "Training de administrare CMS și 40 de zile de suport"
 ];
 
 export type Cell = "yes" | "no" | string;
